@@ -17,4 +17,13 @@ h1{
     border: 1px solid white;
     text-align: center;
     padding: 5px;
+    float: left; 
+    /* flow of the website is lost - loss the parent div height  */
+}
+.item_3{
+    float: right;
+}
+footer{
+    clear:both;
+    background-color: red;
 }

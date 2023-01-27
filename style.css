@@ -1,0 +1,20 @@
+/* normal flow - all elements are from top to bottom - 
+i.e. -  Section 1 to Section 3 */
+
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+.container{
+    background-color: lightblue;
+}
+.item_1,.item_2,.item_3{
+    width: 300px;
+    height:200px;
+    background-color: orange;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+}

@@ -29,7 +29,9 @@ h1{
     /* align-items: flex-start; */
 }
 .item_1,.item_2,.item_3{
-    width: 300px;
+    flex: 1;
+    /* width: 300px; */ /* remove width and use flex to get equal width for all child div's*/
+    /* if we add another child div, all the child div's will take equal width */
     height:200px;
     background-color: orange;
     border: 1px solid white;
@@ -37,3 +39,6 @@ h1{
     padding: 5px;
 }
 
+.item_2{
+    flex: 2;
+}

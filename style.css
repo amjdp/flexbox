@@ -1,5 +1,3 @@
-/* normal flow - all elements are from top to bottom - 
-i.e. -  Section 1 to Section 3 */
 
 body{
     margin: 0;
@@ -9,6 +7,26 @@ h1{
 }
 .container{
     background-color: lightblue;
+
+    display: flex; /* default direction - row */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+    /* for flex-direction: row;  */
+    /* justify-content horizontally */
+    /* flex-direction: row-reverse; */ /* order and alignment will change */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */ /* default */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */ 
+    /* justify-content: space-evenly; */
+    height: 400px;
+    /* align-items vertically */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
 }
 .item_1,.item_2,.item_3{
     width: 300px;
@@ -17,13 +35,5 @@ h1{
     border: 1px solid white;
     text-align: center;
     padding: 5px;
-    float: left; 
-    /* flow of the website is lost - loss the parent div height  */
 }
-.item_3{
-    float: right;
-}
-footer{
-    clear:both;
-    background-color: red;
-}
+

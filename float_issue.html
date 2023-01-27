@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+ /* normal flow - all elements are from top to bottom - i.e.Section 1 to Section 3 */
+
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+.container{
+    background-color: lightblue;
+}
+.item_1,.item_2,.item_3{
+    width: 300px;
+    height:200px;
+    background-color: orange;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    float: left; 
+    /* flow of the website is lost - loss the parent div height  */
+}
+.item_3{
+    float: right;
+}
+footer{
+    clear:both;
+    background-color: red;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item_1">
+        <h1>Section 1</h1>
+      </div>
+      <div class="item_2">
+        <h1>Section 2</h1>
+      </div>
+      <div class="item_3">
+        <h1>Section 3</h1>
+      </div>
+    </div>
+
+    <footer>content</footer>
+    <footer>content</footer>
+    <footer>content</footer>
+    <footer>content</footer>
+
+    <!-- lost the flow of website..elements doesn't know from where should they start or end -->
+  </body>
+</html>
